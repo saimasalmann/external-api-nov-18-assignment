@@ -17,7 +17,7 @@ export default function FetchPostPage(){
                 }
                 else {setError(data.message)}
             })
-            .catch((err)=>setError("An expected Error"))
+            .catch(()=>setError("An expected Error"))
             .finally(()=>setLoading(false))
         },[])
         if(loading){ 
